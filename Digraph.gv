@@ -1,0 +1,14 @@
+digraph {
+	node [fontsize=9 height=0.2 shape=circle width=0.2]
+	"x-distance" [fillcolor=lightgray shape=box style=filled]
+	"top y-distance" [fillcolor=lightgray shape=box style=filled]
+	"bottom y-distance" [fillcolor=lightgray shape=box style=filled]
+	"pipe velocity" [fillcolor=lightgray shape=box style=filled]
+	tilt [fillcolor=lightgray shape=box style=filled]
+	"bird velocity" [fillcolor=lightgray shape=box style=filled]
+	jump [fillcolor=lightblue style=filled]
+	"top y-distance" -> jump [color=green penwidth=0.49905791983312264 style=solid]
+	"bottom y-distance" -> jump [color=red penwidth=0.7428502167854579 style=solid]
+	"pipe velocity" -> jump [color=green penwidth=0.25089081714110806 style=solid]
+	"bird velocity" -> jump [color=green penwidth=0.19592002531118582 style=solid]
+}
