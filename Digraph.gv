@@ -7,8 +7,9 @@ digraph {
 	tilt [fillcolor=lightgray shape=box style=filled]
 	"bird velocity" [fillcolor=lightgray shape=box style=filled]
 	jump [fillcolor=lightblue style=filled]
-	"top y-distance" -> jump [color=green penwidth=0.49905791983312264 style=solid]
-	"bottom y-distance" -> jump [color=red penwidth=0.7428502167854579 style=solid]
-	"pipe velocity" -> jump [color=green penwidth=0.25089081714110806 style=solid]
-	"bird velocity" -> jump [color=green penwidth=0.19592002531118582 style=solid]
+	"top y-distance" -> jump [color=green penwidth=0.4460039487604597 style=solid]
+	"bottom y-distance" -> jump [color=red penwidth=0.46303308537294097 style=solid]
+	"pipe velocity" -> jump [color=red penwidth=0.5697071979983722 style=solid]
+	tilt -> jump [color=red penwidth=0.24687000372008452 style=solid]
+	"bird velocity" -> jump [color=red penwidth=0.10816559715936347 style=solid]
 }

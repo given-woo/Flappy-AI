@@ -147,8 +147,8 @@ class Pipe:
         self.PIPE_TOP = pygame.transform.flip(PIPE_IMG, False, True)
         self.PIPE_BOTTOM = PIPE_IMG
         self.vel = 5+0.25*score
-        if self.vel > 9.5:
-            self.vel = 9.5
+        if self.vel > 8:
+            self.vel = 8
 
         self.passed = False
         self.set_height()
@@ -190,8 +190,8 @@ class Base:
         self.x1 = 0
         self.x2 = self.WIDTH
         self.vel = 5 + 0.25 * score
-        if self.vel > 9.5:
-            self.vel = 9.5
+        if self.vel > 8:
+            self.vel = 8
 
     def move(self):
         self.x1 -= self.vel
@@ -322,6 +322,7 @@ def main(genomes, config):
             f = ge[0].fitness
 
         draw_window(win, birds, pipes, base, score, f)
+
     global GEN
     GEN += 1
 
